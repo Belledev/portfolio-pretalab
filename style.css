@@ -27,7 +27,7 @@
 }
 
 .central{
-    display: inline-block;
+    display:inline-block ;
     text-align: center;
     padding: 20px;
 }
@@ -39,7 +39,7 @@ h1{
     font-weight: bold;
 }
 
-h3{
+.teste{
     color: #69005A;
     font-size: 30px;
 }
@@ -94,6 +94,7 @@ a:hover{
     cursor: pointer;
     z-index: 9999;
     transition:400ms ease-in-out 0s;
+    
 }
 
 .checkbox .trace{
@@ -132,7 +133,8 @@ a:hover{
     background-color: transparent;
     height: 4px;
     width: 10px;
-    box-shadow: 0px 0px 0px ;
+    border-radius: 80%;
+    box-shadow: 0px 0px 0px #DEAFA3;
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -144,9 +146,9 @@ a:hover{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content:flex-start;
-    align-items: start;
-    z-index: 2;
+    justify-content:center;
+    align-items:center;
+    z-index:2;
     opacity: 0;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
@@ -158,7 +160,7 @@ a:hover{
 }
 
 .menu ul li a {
-    margin: 10px 0;
+    margin: 0px 0;
     color: #151c1f;
     text-decoration: none;
     text-transform: uppercase;
@@ -190,9 +192,13 @@ a:hover{
     top: 48px;
 }
 
+#toggle:checked .checkbox{
+    background-color: #ffffff;
+}
+
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 0vmax 
-    
+    box-shadow: 0px 0px 0px 95vmax #ffffff;
+    z-index:1;
 }
 
 #toggle:checked ~ .menu-items{
@@ -268,7 +274,7 @@ a:hover{
     position: absolute;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
+    border-radius: 80%;
     display: block;
     border: 1px solid #ffffff;
     opacity: 0;
@@ -329,3 +335,4 @@ a:hover{
     color: #69005A;
     text-decoration: none;
 }
+
